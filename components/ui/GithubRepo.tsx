@@ -1,10 +1,8 @@
-import { FiStar, FiGitBranch, FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 
 interface GithubRepoProps {
   name: string;
   html_url: string;
-  stargazers_count: number;
-  forks_count: number;
   language: string;
 }
 
@@ -31,7 +29,7 @@ const languageColors: Record<string, string> = {
   Svelte: "#ff3e00",
 };
 
-export default function GithubRepo({ name, html_url, stargazers_count, forks_count, language }: GithubRepoProps) {
+export default function GithubRepo({ name, html_url, language }: GithubRepoProps) {
   return (
     <a
       href={html_url}
@@ -47,14 +45,6 @@ export default function GithubRepo({ name, html_url, stargazers_count, forks_cou
             {language}
           </span>
         )}
-        <span className="flex items-center gap-1">
-          <FiStar className="h-3 w-3" />
-          {stargazers_count}
-        </span>
-        <span className="flex items-center gap-1">
-          <FiGitBranch className="h-3 w-3" />
-          {forks_count}
-        </span>
       </div>
       <span className="absolute inset-y-0 right-5 flex items-center">
         <FiArrowUpRight className="h-4 w-4 text-(--text-secondary) opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

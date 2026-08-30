@@ -55,8 +55,6 @@ export default function Projects() {
                 key={repo.name}
                 name={repo.name}
                 html_url={repo.html_url}
-                stargazers_count={repo.stargazers_count}
-                forks_count={repo.forks_count}
                 language={repo.language}
               />
             ))}
