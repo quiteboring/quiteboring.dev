@@ -15,9 +15,19 @@ export const projects = [
     tags: ["Kotlin", "Java", "Typescript", "DiscordJS", "NextJS", "Tailwind"],
   },
   {
+    title: "Bloom",
+    desc: "An all-in-one Hypixel SkyBlock client built for Fabric.",
+    tags: ["Kotlin", "Java", "Go", "Python", "Rust"],
+  },
+  {
     title: "V5",
     desc: "Next-generation client Hypixel Skyblock client.",
     tags: ["Kotlin", "Java", "Javascript", "Typescript", "C#", "C++", "CMake"],
+  },
+  {
+    title: "Zylo",
+    desc: "Simple app for offline music.",
+    tags: ["Javascript", "Expo", "React Native"],
   },
   {
     title: "SlayerXPOverlayFabric",
